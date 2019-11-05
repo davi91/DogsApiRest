@@ -72,11 +72,15 @@ public class DogService {
 				throw new DogServiceException("Error al obtener una imagen aleatoria");
 			}
 			
+			
+			
 			return new URL(img.getMessage());
 			
 		} catch (UnirestException | MalformedURLException e) {
 			throw new DogServiceException();
 		}
+		
+		
 	}
 	
 	public List<URL> imageByBreeds(String breed) throws DogServiceException {
